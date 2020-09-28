@@ -1,2 +1,2 @@
 # IAD
-Class materials for inquiry-based art and design
+Class materials for Inquiry-based Art + Design
