@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>David Zikovitz</title>
+</head>
+<body style="background-image: url('assets/background.png'); background-repeat: repeat;">
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-4 col-md-3" id="sticky-sidebar">
+      <div class="sticky-top">
+        <img class="scaled-img" src="assets/title2.png" alt="David Zikovitz, Educator and Maker">
+        <br><br><br>
+        <ul class="menu">
+          <p>Inquiry-based Art + Design</p>
+          <li id="knoll" onclick="changeSlide(this)">Knolling</li>
+          <li id="object" onclick="changeSlide(this)">Object</li>
+          <li id="cardboard" onclick="changeSlide(this)">Cardboard</li>
+          <li id="container" onclick="changeSlide(this)">Container</li>
+          <li id="stories_of_things" onclick="changeSlide(this)">Stories of Things</li>
+          <li id="word_gif" onclick="changeSlide(this)">Word GIF</li>
+          <li id="mail_art" onclick="changeSlide(this)">Mail Art</li>
+          <li id="words_as_art" onclick="changeSlide(this)">Words as Art</li>
+          <li id="glitch_art" onclick="changeSlide(this)">Glitch Art</li>
+          <li id="art_and_code" onclick="changeSlide(this)">Art and Code</li>
+          <li id="final_project" onclick="changeSlide(this)">Final Project</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-8 col-md-9 blog">
+      <h4><small>INQUIRY-BASED ART + DESIGN</small></h4>
+
+      <div id="knoll_slide" style="display: block">
+        <hr>
+        <h2>Knolling</h2><br>
+        <div id="carouselKnoll" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/knoll/knoll-tools.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/knoll/knoll-materials.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselKnoll" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselKnoll" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>Attending a hands-on art class remotely during a pandemic, we were asked to collect all our tools and materials and organize them at right angles against a backdrop. This became the base on which we would be working for the rest of the course.</p>
+      </div>
+
+      <div id="object_slide" style="display: none">
+        <hr>
+        <h2>Object</h2><br>
+        <img class="images" src="assets/saw.png" alt=""><br><br>
+        <p>My panel saw tells the most about me. It’s big and unwieldy, but it does delicate work, if you use it right. I bought it in New York, but it comes from Japan, where I used to live. It ties together parts of my life, and helped new parts begin. I’m proud of what I’ve done with it, but it also scares me. It doesn’t quite fit in my tool bag, so when I take it to the workshop, it sticks out, and I feel like it might get me in trouble while riding on the subway. I look like an 80s horror film villain when I hold it, but I like that. I like that it says not to be deceived by appearances.</p>
+      </div>
+
+      <div id="cardboard_slide" style="display: none">
+        <hr>
+        <h2>Cardboard</h2><br>
+        <div id="carouselCdbd" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/cdbd/cdbd1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/cdbd/cdbd2.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselCdbd" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCdbd" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>Experimenting with carboard construction. I chose to build a small box in which to put other materials.</p>
+      </div>
+
+      <div id="container_slide" style="display: none">
+        <hr>
+        <h2>Container</h2><br>
+        <div id="carouselContainer" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/hw3/container-01.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-02.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-03.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-04.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-05.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-06.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-07.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-08.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-09.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-10.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-11.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/hw3/container-12.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselContainer" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselContainer" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>Using the materials at hand, I chose to create a container that could conveniently hold all the other materials, and the most useful tools. The critiera were that it hold everything in one, and it should be portable.</p>
+      </div>
+
+      <div id="stories_of_things_slide" style="display: none">
+        <hr>
+        <h2>Stories of Things</h2><br>
+        <div id="carouselSoT" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/stories_of_things/01_plan.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/stories_of_things/02_partslayout.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/stories_of_things/03_building.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/stories_of_things/04_back1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/stories_of_things/05_back2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/stories_of_things/06_proto.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselSoT" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselSoT" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>Using both object for a future scenario and second-life object as inspiration, I created a secret control panel for kids to communicate with each other remotely using their own invented secret code based on the preset buttons, switches, and motors on the device. Although only currently completed as a working prototype, the plan is to then fit this device into another object, like a book or box, in order to give it a “secret” feel.</p><br>
+        <p>The extension is two-fold in the creation of the control panel’s “container” or second-life object, and in the creation of a guide and history of long-distance messaging and code creation, along with multiple examples of codes to use with the device and templates to create new codes collaboratively with friends and family.</p>
+      </div>
+
+      <div id="word_gif_slide" style="display: none">
+        <hr>
+        <h2>Word GIF</h2><br>
+        <img class="images" src="assets/word_gif.gif" alt=""><br><br>
+        <p>Turning words into moving images, I chose a quote that resonated with me. It's one of the catchphrases of Pee-Wee Herman, a hero of my childhood. It's also surprisingly meaningful: you can only tell people who they are in relation to yourself, not who they really are.</p>
+      </div>
+
+      <div id="mail_art_slide" style="display: none">
+        <hr>
+        <h2>Mail Art</h2><br>
+        <div id="carouselMail" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/Zine/FRONT.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/INNERFRONT.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/Zine/BACK.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselMail" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselMail" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>As an ideal pandemic project, we created small "zines" to send through the post and collect together. The theme of my zine was the new meaning in old, paper things I either created myself or were sent by other people before lockdown.</p>
+      </div>
+
+      <div id="words_as_art_slide" style="display: none">
+        <hr>
+        <h2>Words as Art</h2><br>
+        <img class="images" src="assets/shakshuka.png" alt=""><br><br>
+        <p>Using the text and words themselves as representative of the objects or concepts they describe, I chose three words my partner liked the sound of and presented them together.</p>
+      </div>
+
+      <div id="glitch_art_slide" style="display: none">
+        <hr>
+        <h2>Glitch Art</h2><br>
+        <div id="carouselGlitch" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/glitch_art/Botticelli_Sebastiano.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/glitch_art/Botticelli_Sebastiano_glitch.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/glitch_art/textbackground.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/glitch_art/Glitch Collage.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselGlitch" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselGlitch" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>Taking an image of a classic piece of art (here, Botticelli's Sebastiano), we dug into the JPEG code itself and made deliberate modifications to "glitch" the image. Then, taking a screenshot of the code, I created a collage of the different elements.</p>
+      </div>
+
+      <div id="art_and_code_slide" style="display: none">
+        <hr>
+        <h2>Art and Code</h2><br>
+        <center>
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe class="embed-responsive-item" width="400px" height="400px" src="https://editor.p5js.org/dmz2117/embed/9-zPVDH4C"></iframe>
+        </div>
+        </center><br><br>
+        <p>Taking inspiration from a previous activity folding paper into geometric structures, I decided to code my favourite paper fold using P5.js. The result allows you to add rows and columns by clicking the buttons. Within the code, an algorithm adds new 3D shapes to the pattern.</p>
+      </div>
+
+      <div id="final_project_slide" style="display: none">
+        <hr>
+        <h2>Final Project</h2><br>
+        <div id="carouselFinal" class="carousel slide w-75" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="assets/final/Final01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final02.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final03.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final04.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final05.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final06.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final07.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final08.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final09.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="assets/final/Final10.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselFinal" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselFinal" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <p>My final project is a continuation of my previous “Stories of Objects” project, which I combined with my project for Tools & Toys of Knowledge Construction, using research to create a constructionist toy, or an “object to think with”.</p>
+        <p>My main goal was to create an object that was so compelling to play with, use, and personalize, and my aesthetic inspiration was the 826 Valencia Pirate Supply store, which sells super-cool pirate-themed objects that are really just regular things rebranded in a cool way. The shop itself is actually a front for a community tutoring centre, where kids learn writing skills in an amazing environment that’s inviting and inspiring. Creating an educational product, I wanted to always keep aesthetics and “awesomeness” as a top priority.</p>
+        <p>By giving children a cool device that lets them invent their own forms of communication and code, they also learn about how telecommunications work, how messages are encoded by humans and machines, the fundamentals of language and sign systems, and they feel smart and sneaky to top it off.</p>
+        <p>Children are led through the basic concepts with the accompanying book, gaining an understanding of how information is coded to be sent reliably, and what systems can be used to accomplish that. They may use an alphabet cipher, attribute meaning to certain positions, or count using binary-like logic. Using cutouts and templates, they are encouraged to customize the panels and create their own systems, even thinking about specific protocols to be able to swap from one system to another on the fly.</p>
+        <p>Advanced users can go a step further, digging into the elements that are backgrounded by connecting the device to their computer and modifying the underlying code. Since the device uses a wi-fi enabled Arduino microcontroller and standard electronics components, it’s endlessly tinkerable.</p>
+        <p>Michael Eisenberg talked about how passions are ignited by falling in love with objects—things that can be handled, touched, and placed on the shelf, and connected to the material life of the child. The activity of playing with the communication panel is rich in mathematical and language content that links naturally to formal concepts. It forms a constrained microworld that represents the basic mechanics of encoding and decoding, and the need for equivalence. It’s safe, but challenging, and has a low floor in something like the alphabet cipher, and a high ceiling in the creation and switching of multiple codes. It allows kids to understand on some level how people and computers communicate with each other, and in creating their own language, feel a kind of mastery or expertise that will help demystify technology and put them on the path to better understanding it and appropriating it.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+
+</body>
+</html>
