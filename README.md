@@ -1,4 +1,4 @@
 # IAD
-Class materials for Inquiry-based Art + Design
+Class portfolio for Inquiry-based Art + Design
 
-Link: https://dzikovitz.github.io/IAD/
+Link: https://dzikovitz.github.io/IAD/index.html
